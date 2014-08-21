@@ -13,7 +13,7 @@ Just include `lighttpd` in your node's `run_list`:
 
 knife node run list add $node "recipe[lighttpd]"
 
-or in
+or in json
 ```json
 {
   "name":"$node",
