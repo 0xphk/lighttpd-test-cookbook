@@ -9,9 +9,10 @@ chef-client or chef-solo
 **Usage**
 
 **lighttpd::default**
-Just include `lighttpd` in your node's `run_list`:
 
-knife node run list add $node "recipe[lighttpd]"
+just include `lighttpd` in your node's `run_list`:
+
+`knife node run list add $node "recipe[lighttpd]"`
 
 or in json
 ```json
