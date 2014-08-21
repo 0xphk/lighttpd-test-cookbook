@@ -1,20 +1,20 @@
 lighttpd Cookbook
-=================
+-----------------
 installs and configures lighty 
 
-Requirements
-------------
+**Requirements**
+
 chef
 
-Attributes
-----------
+**Attributes**
+
 TODO: List your cookbook attributes here.
 
-Usage
------
+**Usage**
+
 #### lighttpd::default
 Just include `lighttpd` in your node's `run_list`:
-
+knife node run list add node "recipe[lighttpd]"
 ```json
 {
   "name":"my_node",
@@ -24,8 +24,7 @@ Just include `lighttpd` in your node's `run_list`:
 }
 ```
 
-Contributing
-------------
+**Contributing**
 
 1. Fork the repository on Github
 2. Create a named feature branch (like `add_component_x`)
@@ -34,6 +33,6 @@ Contributing
 5. Run the tests, ensuring they all pass
 6. Submit a Pull Request using Github
 
-License and Authors
--------------------
+**License and Authors**
+
 Authors: 0xphk
