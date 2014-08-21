@@ -1,3 +1,4 @@
-<h1><%= node['lighttpd']['greeting'] %></h1>
-<p>nodename is <font color=red><%= node['hostname'] %></font> on <%= node['platform_family'] %> <%= node['os'] %></p>
-<p>ipv4 = <%= node['ipaddress'] %></p>
+<p><%= node['lighttpd']['greeting'] %></p>
+<p>chef version <%= node.chef_packages.chef.version %> on node <font color=red><%= node.hostname %></font> running <%= node.platform_family %> <%= node.kernel.os %> <%= node.kernel.release %></p>
+<!--<p>chef version <%= node['chef_packages']['chef']['version'] %> on node <font color=red><%= node['hostname'] %></font> running <%= node['platform_family'] %> <%= node['os'] %> <%= node['kernel']['release'] %></p>-->
+<p>listening on ip <%= node.ipaddress %></p>
