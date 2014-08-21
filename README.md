@@ -4,20 +4,19 @@ installs and configures lighty
 
 **Requirements**
 
-chef
-
-**Attributes**
-
-TODO: List your cookbook attributes here.
+chef-client or chef-solo
 
 **Usage**
 
-#### lighttpd::default
+### lighttpd::default
 Just include `lighttpd` in your node's `run_list`:
-knife node run list add node "recipe[lighttpd]"
+
+knife node run list add $node "recipe[lighttpd]"
+
+or in
 ```json
 {
-  "name":"my_node",
+  "name":"$node",
   "run_list": [
     "recipe[lighttpd]"
   ]
